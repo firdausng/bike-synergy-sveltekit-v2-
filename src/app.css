@@ -1,0 +1,44 @@
+@import "@fontsource-variable/raleway";
+@import '@fontsource/gentium-book-plus';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway Variable', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #01414e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.app-header {
+    font-family: 'Gentium Book Plus', sans-serif;
+}
+
+.splide--fade .splide__slide:first-of-type ,
+.splide--fade .is-prev {
+    opacity: 1!important;
+}

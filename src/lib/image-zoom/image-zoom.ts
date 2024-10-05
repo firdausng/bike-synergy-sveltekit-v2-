@@ -1,0 +1,1 @@
+export type ZoomOptions = "lens" | "window" | "inner" | ""

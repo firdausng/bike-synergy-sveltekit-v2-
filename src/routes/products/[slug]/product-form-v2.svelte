@@ -57,7 +57,7 @@
                 <h3 class="text-lg font-semibold py-2">{d}</h3>
                 <div class="grid grid-cols-12 gap-4 items-center">
                 {#each groupedData[d] as f}
-                    <div class="col-span-{f.colSpan ? f.colSpan : '12'}">
+                    <div class="col-span-12 md:col-span-{f.colSpan ? f.colSpan : '12'}">
                         <div class=" flex items-center gap-4">
                             <label class="w-20 text-slate-600" for="packages[index]">
                                 {f.label}

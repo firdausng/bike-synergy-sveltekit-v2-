@@ -29,5 +29,24 @@ export default {
     require('@tailwindcss/typography'),
     require('flowbite/plugin'),
   ],
+  safelist: [
+    'text-2xl',
+    'text-3xl',
+    {
+      pattern: /grid-cols-.+/,
+      variants: ['md'],
+    },
+    {
+      pattern: /col-span-.+/,
+      variants: ['12', '6'],
+    },
+    {
+      pattern: /md:col-span-.+/,
+      variants: ['12', '6'],
+    },
+    {
+      pattern: /(bg-|dark:bg-).+/
+    },
+  ],
 }
 

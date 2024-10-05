@@ -196,7 +196,7 @@
             <div class="flex flex-col items-center text-center">
                 <div class="justify-center p-2">
                     <img class="object-cover rounded-full w-48 h-48 border-2 border-[#01414e] shadow-sm shadow-[#01414e]"
-                         src={`/images/${member.imagePath}`}
+                         src={`/images${member.imagePath}`}
                          alt={member.name}
                          height={150}
                          width={150} />
